@@ -20,6 +20,6 @@ runs:
       run: ls -la
       shell: bash
     - id: passwordgenerator
-      run: ${{ github.action_path }}/New-Password.ps1 -length ${{ inputs.length }}
+      run: ${{ github.action_path }}/Password-Generator.ps1 -length ${{ inputs.length }}
       shell: pwsh
 
