@@ -3,7 +3,7 @@ demo:
     steps:
      - uses: actions/checkout@v2
      - id: generatePassword
-       uses: AleksAlonso/Password-Generator@v0.2
+       uses: AleksAlonso/Password-Generator@v0.4
      - name: show password
        run: echo "${{ steps.generatePassword.outputs.password }}"
        shell: bash
