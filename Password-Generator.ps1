@@ -51,6 +51,5 @@ while ($GeneratedPassword -match $ReplacedCharacters) {
     $randomcharacter = [char]((65..90) + (97..122) | Get-Random -Count 1)
     $GeneratedPassword = $GeneratedPassword -replace $Matches[0], $randomcharacter
 }
-
 # Return password to workflow
 echo "::set-output name=password::$GeneratedPassword"
