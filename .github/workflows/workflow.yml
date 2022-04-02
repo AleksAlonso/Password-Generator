@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v1
       - id: generatePassword
-        uses: ./action-a
+        uses: AleksAlonso/Password-Generator@v0.1
       - name: show password
         run: echo "${{ steps.generatePassword.outputs.password }}"
         shell: bash
