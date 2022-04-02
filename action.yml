@@ -13,5 +13,7 @@ runs:
   using: "composite"
   steps:
     - id: passwordgenerator
+      run: pwd
+      run: ls -la
       run: ${{ github.action_path }}/New-Password.ps1 -length ${{ inputs.length }}
       shell: pwsh
