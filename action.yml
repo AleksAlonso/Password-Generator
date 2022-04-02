@@ -16,7 +16,7 @@ runs:
     - id: current-directory
       run: pwd
       shell: bash
-    - id: list files
+    - id: list-files
       run: ls -la
       shell: bash
     - id: passwordgenerator
